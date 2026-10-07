@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turismo 2026 — Destinos de los españoles</title>
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@3/dist/maplibre-gl.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="panel-collapsed legend-collapsed">
+    <header class="topbar">
+      <div class="topbar__text">
+        <h1>Países de destino de los turistas españoles</h1>
+        <p class="subtitle">
+          Mapa coloreado por el total de turistas los meses de verano de 2026.
+          <br>Haz click en cada país para ver la evolución de los últimos años.
+        </p>
+      </div>
+      <img src="logo_newtral.png" alt="Newtral" class="topbar__logo" />
+      <div class="mobile-toggles">
+        <button id="panel-toggle" class="toggle-btn" type="button">🏆 Ranking</button>
+        <button id="legend-toggle" class="toggle-btn" type="button">▦ Leyenda</button>
+      </div>
+    </header>
+
+    <main id="map">
+      <aside class="ranking">
+        <p class="ranking__title">Ranking de destinos — jun–ago 2026</p>
+        <ol id="ranking-list" class="ranking__list"></ol>
+      </aside>
+    </main>
+
+    <div id="legend" class="legend"></div>
+
+    <script src="https://unpkg.com/maplibre-gl@3/dist/maplibre-gl.js"></script>
+    <script src="map.js"></script>
+  </body>
+</html>
